@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OM Jewellery</title>
+<title>Om Jewellers</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Noto+Serif+Gujarati:wght@400;500;600;700&display=swap');
 
@@ -30,9 +30,9 @@
     padding-bottom: var(--bar-h); /* room for sticky mobile action bar */
   }
 
-  body.lang-gu :lang(en){display:none;}
-  body:not(.lang-gu) :lang(gu){display:none;}
-  :lang(gu){ font-family:'Noto Serif Gujarati', serif; }
+  body.lang-gu .t-en{display:none;}
+  body:not(.lang-gu) .t-gu{display:none;}
+  .t-gu{ font-family:'Noto Serif Gujarati', serif; }
 
   a{ color: inherit; text-decoration:none; }
   img{ max-width:100%; display:block; }
@@ -44,7 +44,7 @@
     color: var(--silver-dim);
     text-transform: uppercase;
   }
-  :lang(gu).eyebrow{ letter-spacing:0.5px; }
+  .eyebrow .t-gu{ letter-spacing:0.5px; }
 
   .wrap{ max-width: 1160px; margin:0 auto; padding: 0 18px; }
 
@@ -70,7 +70,7 @@
     opacity:0.75;
     padding: 0 10px;
   }
-  :lang(gu).ph-label{ letter-spacing:0.3px; }
+  .ph-label .t-gu{ letter-spacing:0.3px; }
   .ph img{
     position:absolute; inset:0;
     width:100%; height:100%;
@@ -167,7 +167,7 @@
     text-transform:uppercase;
     color: var(--platinum);
   }
-  :lang(gu).hero-content h1{ letter-spacing:1px; font-size:32px; text-transform:none;}
+  .hero-content h1 .t-gu{ letter-spacing:1px; font-size:32px; text-transform:none;}
   .hero-content .tagline{
     margin-top: 14px;
     font-family:'Cinzel', serif;
@@ -178,7 +178,7 @@
     max-width: 340px;
     margin-left:auto; margin-right:auto;
   }
-  :lang(gu).hero-content .tagline{ letter-spacing:0.3px; font-size:14px; text-transform:none; }
+  .hero-content .tagline .t-gu{ letter-spacing:0.3px; font-size:14px; text-transform:none; }
 
   .cta{
     display:inline-block;
@@ -204,7 +204,7 @@
   }
   .trust-item{ text-align:center; }
   .trust-item .label{ font-family:'Cinzel', serif; font-size: 10px; letter-spacing: 1px; text-transform:uppercase; color: var(--silver-dim); }
-  :lang(gu).label{ letter-spacing:0.3px; }
+  .label .t-gu{ letter-spacing:0.3px; }
 
   /* ---------- SECTION SHELL ---------- */
   section{ padding: 60px 18px; }
@@ -217,7 +217,7 @@
     color: var(--platinum);
     margin-top: 10px;
   }
-  :lang(gu).section-head-title{ font-size:22px; letter-spacing:0.5px; }
+  .section-head-title .t-gu{ font-size:22px; letter-spacing:0.5px; }
   .section-head .sub{ margin-top:12px; color:var(--silver-dim); font-size:15px; max-width:420px; margin-left:auto; margin-right:auto; }
 
   /* ---------- BANNER ---------- */
@@ -226,7 +226,7 @@
   .banner::after{ content:""; position:absolute; inset:0; background: linear-gradient(180deg, rgba(10,10,11,0.25), rgba(10,10,11,0.92)); }
   .banner-content{ position:absolute; left:0; right:0; bottom:0; padding: 0 22px 26px; z-index:2; text-align:center; }
   .banner-content h2{ font-family:'Cormorant Garamond', serif; font-size:26px; letter-spacing:2px; color:var(--platinum); text-transform:uppercase; margin-top:8px;}
-  :lang(gu).banner-content h2{ letter-spacing:0.5px; font-size:21px; text-transform:none;}
+  .banner-content h2 .t-gu{ letter-spacing:0.5px; font-size:21px; text-transform:none;}
   .banner-content p{ color:var(--silver-dim); margin-top:10px; font-size:14px; }
 
   /* ---------- GALLERY ---------- */
@@ -316,7 +316,7 @@
     .mobile-links{ display:none !important; }
 
     .hero-content h1{ font-size: 60px; letter-spacing:9px; }
-    :lang(gu).hero-content h1{ font-size:42px; letter-spacing:2px; }
+    .hero-content h1 .t-gu{ font-size:42px; letter-spacing:2px; }
     .hero-content .tagline{ font-size:13px; max-width:520px; }
     .hero{ height: 86vh; }
 
@@ -352,13 +352,13 @@
         <circle cx="75" cy="75" r="70" fill="none" stroke="url(#silverGradSmall)" stroke-width="2"/>
         <text x="75" y="98" text-anchor="middle" font-family="'Noto Serif Devanagari', serif" font-size="70" fill="url(#silverGradSmall)">&#2384;</text>
       </svg>
-      <span class="brand-text">OM JEWELLERY</span>
+      <span class="brand-text">OM JEWELLERS</span>
     </div>
     <nav class="links">
-      <a href="#home">Home</a>
-      <a href="#collections">Collections</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#home"><span lang="en" class="t-en">Home</span><span lang="gu" class="t-gu">હોમ</span></a>
+      <a href="#collections"><span lang="en" class="t-en">Collections</span><span lang="gu" class="t-gu">કલેક્શન</span></a>
+      <a href="#about"><span lang="en" class="t-en">About</span><span lang="gu" class="t-gu">અમારા વિશે</span></a>
+      <a href="#contact"><span lang="en" class="t-en">Contact</span><span lang="gu" class="t-gu">સંપર્ક</span></a>
     </nav>
     <div class="nav-right">
       <button id="langToggle" onclick="toggleLang()">EN / ગુ</button>
@@ -366,17 +366,17 @@
     </div>
   </div>
   <div class="mobile-links">
-    <a href="#home" onclick="closeMenu()">Home</a>
-    <a href="#collections" onclick="closeMenu()">Collections</a>
-    <a href="#about" onclick="closeMenu()">About</a>
-    <a href="#contact" onclick="closeMenu()">Contact</a>
+    <a href="#home" onclick="closeMenu()"><span lang="en" class="t-en">Home</span><span lang="gu" class="t-gu">હોમ</span></a>
+    <a href="#collections" onclick="closeMenu()"><span lang="en" class="t-en">Collections</span><span lang="gu" class="t-gu">કલેક્શન</span></a>
+    <a href="#about" onclick="closeMenu()"><span lang="en" class="t-en">About</span><span lang="gu" class="t-gu">અમારા વિશે</span></a>
+    <a href="#contact" onclick="closeMenu()"><span lang="en" class="t-en">Contact</span><span lang="gu" class="t-gu">સંપર્ક</span></a>
   </div>
 </header>
 
 <section class="hero" id="home" style="padding:0;">
   <div class="ph">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12,3 20,9 12,21 4,9"/></svg>
-    <span class="ph-label"><img src="b54cfa7f26b96935b13395d710464c7b.jpg"><span lang="en">Hero Photo — Model Wearing Gold Jewellery</span><span lang="gu">હીરો ફોટો — ગોલ્ડ જ્વેલરી પહેરેલ મોડેલ</span></span>
+    <span class="ph-label"><span lang="en" class="t-en">Hero Photo — Model Wearing Gold Jewellery</span><span lang="gu" class="t-gu">હીરો ફોટો — ગોલ્ડ જ્વેલરી પહેરેલ મોડેલ</span></span>
   </div>
   <div class="hero-content">
     <div class="medallion">
@@ -399,106 +399,106 @@
         <text x="75" y="98" text-anchor="middle" font-family="'Noto Serif Devanagari', serif" font-size="72" fill="url(#silverGradHero)">&#2384;</text>
       </svg>
     </div>
-    <h1><span lang="en">OM Jewellery</span><span lang="gu">ઓમ જ્વેલરી</span></h1>
+    <h1><span lang="en" class="t-en">Om Jewellers</span><span lang="gu" class="t-gu">ૐ જવેલર્સ</span></h1>
     <p class="tagline">
-      <span lang="en">Timeless Craftsmanship in Gold, Silver &amp; Diamond</span>
-      <span lang="gu">સોના, ચાંદી અને હીરાની કાલાતીત કારીગરી</span>
+      <span lang="en" class="t-en">Timeless Craftsmanship in Gold, Silver &amp; Diamond</span>
+      <span lang="gu" class="t-gu">સોના, ચાંદી અને હીરાની કાલાતીત કારીગરી</span>
     </p>
     <a href="#collections" class="cta">
-      <span lang="en">Explore Collections</span>
-      <span lang="gu">કલેક્શન જુઓ</span>
+      <span lang="en" class="t-en">Explore Collections</span>
+      <span lang="gu" class="t-gu">કલેક્શન જુઓ</span>
     </a>
   </div>
 </section>
 
 <div class="trust">
   <div class="trust-row">
-    <div class="trust-item"><div class="label"><span lang="en">BIS Hallmarked Gold</span><span lang="gu">BIS હોલમાર્ક સોનું</span></div></div>
-    <div class="trust-item"><div class="label"><span lang="en">Certified Purity</span><span lang="gu">પ્રમાણિત શુદ્ધતા</span></div></div>
-    <div class="trust-item"><div class="label"><span lang="en">Custom Designs</span><span lang="gu">કસ્ટમ ડિઝાઇન</span></div></div>
-    <div class="trust-item"><div class="label"><span lang="en">Trusted Across Generations</span><span lang="gu">પેઢીઓથી વિશ્વસનીય</span></div></div>
+    <div class="trust-item"><div class="label"><span lang="en" class="t-en">BIS Hallmarked Gold</span><span lang="gu" class="t-gu">BIS હોલમાર્ક સોનું</span></div></div>
+    <div class="trust-item"><div class="label"><span lang="en" class="t-en">Certified Purity</span><span lang="gu" class="t-gu">પ્રમાણિત શુદ્ધતા</span></div></div>
+    <div class="trust-item"><div class="label"><span lang="en" class="t-en">Custom Designs</span><span lang="gu" class="t-gu">કસ્ટમ ડિઝાઇન</span></div></div>
+    <div class="trust-item"><div class="label"><span lang="en" class="t-en">Trusted Across Generations</span><span lang="gu" class="t-gu">પેઢીઓથી વિશ્વસનીય</span></div></div>
   </div>
 </div>
 
 <div class="banner">
-  <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12,3 20,9 12,21 4,9"/></svg><span class="ph-label"><span lang="en">Wide Banner Photo — New Arrivals</span><span lang="gu">બેનર ફોટો — નવી વસ્તુઓ</span></span></div>
+  <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12,3 20,9 12,21 4,9"/></svg><span class="ph-label"><span lang="en" class="t-en">Wide Banner Photo — New Arrivals</span><span lang="gu" class="t-gu">બેનર ફોટો — નવી વસ્તુઓ</span></span></div>
   <div class="banner-content">
-    <div class="eyebrow"><span lang="en">Just In</span><span lang="gu">નવું</span></div>
-    <h2><span lang="en">New Arrivals</span><span lang="gu">નવી વસ્તુઓ</span></h2>
-    <p><span lang="en">Fresh designs added this season, ready to view in-store.</span><span lang="gu">આ સીઝનમાં ઉમેરવામાં આવેલી નવી ડિઝાઇન, દુકાનમાં જોવા માટે તૈયાર.</span></p>
+    <div class="eyebrow"><span lang="en" class="t-en">Just In</span><span lang="gu" class="t-gu">નવું</span></div>
+    <h2><span lang="en" class="t-en">New Arrivals</span><span lang="gu" class="t-gu">નવી વસ્તુઓ</span></h2>
+    <p><span lang="en" class="t-en">Fresh designs added this season, ready to view in-store.</span><span lang="gu" class="t-gu">આ સીઝનમાં ઉમેરવામાં આવેલી નવી ડિઝાઇન, દુકાનમાં જોવા માટે તૈયાર.</span></p>
   </div>
 </div>
 
 <section id="collections">
   <div class="section-head">
-    <div class="eyebrow"><span lang="en">Browse The Range</span><span lang="gu">શ્રેણી બ્રાઉઝ કરો</span></div>
-    <h2 class="section-head-title"><span lang="en">Collections</span><span lang="gu">કલેક્શન</span></h2>
+    <div class="eyebrow"><span lang="en" class="t-en">Browse The Range</span><span lang="gu" class="t-gu">શ્રેણી બ્રાઉઝ કરો</span></div>
+    <h2 class="section-head-title"><span lang="en" class="t-en">Collections</span><span lang="gu" class="t-gu">કલેક્શન</span></h2>
   </div>
   <div class="wrap">
     <div class="filter-tabs">
-      <button class="active" data-filter="all"><span lang="en">All</span><span lang="gu">બધું</span></button>
-      <button data-filter="gold"><span lang="en">Gold</span><span lang="gu">સોનું</span></button>
-      <button data-filter="silver"><span lang="en">Silver</span><span lang="gu">ચાંદી</span></button>
-      <button data-filter="diamond"><span lang="en">Diamond</span><span lang="gu">હીરા</span></button>
-      <button data-filter="bridal"><span lang="en">Bridal</span><span lang="gu">દુલ્હન</span></button>
+      <button class="active" data-filter="all"><span lang="en" class="t-en">All</span><span lang="gu" class="t-gu">બધું</span></button>
+      <button data-filter="gold"><span lang="en" class="t-en">Gold</span><span lang="gu" class="t-gu">સોનું</span></button>
+      <button data-filter="silver"><span lang="en" class="t-en">Silver</span><span lang="gu" class="t-gu">ચાંદી</span></button>
+      <button data-filter="diamond"><span lang="en" class="t-en">Diamond</span><span lang="gu" class="t-gu">હીરા</span></button>
+      <button data-filter="bridal"><span lang="en" class="t-en">Bridal</span><span lang="gu" class="t-gu">દુલ્હન</span></button>
     </div>
 
     <div class="product-grid" id="productGrid">
 
       <div class="product-card show" data-cat="gold">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg><span class="ph-label"><span lang="en">Add Photo</span><span lang="gu">ફોટો ઉમેરો</span></span></div>
-        <h3><span lang="en">Gold Necklace Set</span><span lang="gu">ગોલ્ડ નેકલેસ સેટ</span></h3>
-        <div class="cat"><span lang="en">Gold &middot; 22K</span><span lang="gu">સોનું &middot; 22K</span></div>
-        <div class="price"><span lang="en">Enquire for price</span><span lang="gu">ભાવ માટે પૂછો</span></div>
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg><span class="ph-label"><span lang="en" class="t-en">Add Photo</span><span lang="gu" class="t-gu">ફોટો ઉમેરો</span></span></div>
+        <h3><span lang="en" class="t-en">Gold Necklace Set</span><span lang="gu" class="t-gu">ગોલ્ડ નેકલેસ સેટ</span></h3>
+        <div class="cat"><span lang="en" class="t-en">Gold &middot; 22K</span><span lang="gu" class="t-gu">સોનું &middot; 22K</span></div>
+        <div class="price"><span lang="en" class="t-en">Enquire for price</span><span lang="gu" class="t-gu">ભાવ માટે પૂછો</span></div>
       </div>
 
       <div class="product-card show" data-cat="gold">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg><span class="ph-label"><span lang="en">Add Photo</span><span lang="gu">ફોટો ઉમેરો</span></span></div>
-        <h3><span lang="en">Gold Bangles (Pair)</span><span lang="gu">ગોલ્ડ બંગડી (જોડી)</span></h3>
-        <div class="cat"><span lang="en">Gold &middot; 22K</span><span lang="gu">સોનું &middot; 22K</span></div>
-        <div class="price"><span lang="en">Enquire for price</span><span lang="gu">ભાવ માટે પૂછો</span></div>
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg><span class="ph-label"><span lang="en" class="t-en">Add Photo</span><span lang="gu" class="t-gu">ફોટો ઉમેરો</span></span></div>
+        <h3><span lang="en" class="t-en">Gold Bangles (Pair)</span><span lang="gu" class="t-gu">ગોલ્ડ બંગડી (જોડી)</span></h3>
+        <div class="cat"><span lang="en" class="t-en">Gold &middot; 22K</span><span lang="gu" class="t-gu">સોનું &middot; 22K</span></div>
+        <div class="price"><span lang="en" class="t-en">Enquire for price</span><span lang="gu" class="t-gu">ભાવ માટે પૂછો</span></div>
       </div>
 
       <div class="product-card show" data-cat="gold">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg><span class="ph-label"><span lang="en">Add Photo</span><span lang="gu">ફોટો ઉમેરો</span></span></div>
-        <h3><span lang="en">Gold Ring — Floral</span><span lang="gu">ગોલ્ડ વીંટી — ફ્લોરલ</span></h3>
-        <div class="cat"><span lang="en">Gold &middot; 18K</span><span lang="gu">સોનું &middot; 18K</span></div>
-        <div class="price"><span lang="en">Enquire for price</span><span lang="gu">ભાવ માટે પૂછો</span></div>
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="8"/></svg><span class="ph-label"><span lang="en" class="t-en">Add Photo</span><span lang="gu" class="t-gu">ફોટો ઉમેરો</span></span></div>
+        <h3><span lang="en" class="t-en">Gold Ring — Floral</span><span lang="gu" class="t-gu">ગોલ્ડ વીંટી — ફ્લોરલ</span></h3>
+        <div class="cat"><span lang="en" class="t-en">Gold &middot; 18K</span><span lang="gu" class="t-gu">સોનું &middot; 18K</span></div>
+        <div class="price"><span lang="en" class="t-en">Enquire for price</span><span lang="gu" class="t-gu">ભાવ માટે પૂછો</span></div>
       </div>
 
       <div class="product-card show" data-cat="silver">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="5" y="5" width="14" height="14" rx="1.5"/></svg><span class="ph-label"><span lang="en">Add Photo</span><span lang="gu">ફોટો ઉમેરો</span></span></div>
-        <h3><span lang="en">Silver Anklets</span><span lang="gu">ચાંદીના ઝાંઝર</span></h3>
-        <div class="cat"><span lang="en">Silver &middot; 925</span><span lang="gu">ચાંદી &middot; 925</span></div>
-        <div class="price"><span lang="en">Enquire for price</span><span lang="gu">ભાવ માટે પૂછો</span></div>
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="5" y="5" width="14" height="14" rx="1.5"/></svg><span class="ph-label"><span lang="en" class="t-en">Add Photo</span><span lang="gu" class="t-gu">ફોટો ઉમેરો</span></span></div>
+        <h3><span lang="en" class="t-en">Silver Anklets</span><span lang="gu" class="t-gu">ચાંદીના ઝાંઝર</span></h3>
+        <div class="cat"><span lang="en" class="t-en">Silver &middot; 925</span><span lang="gu" class="t-gu">ચાંદી &middot; 925</span></div>
+        <div class="price"><span lang="en" class="t-en">Enquire for price</span><span lang="gu" class="t-gu">ભાવ માટે પૂછો</span></div>
       </div>
 
       <div class="product-card show" data-cat="silver">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="5" y="5" width="14" height="14" rx="1.5"/></svg><span class="ph-label"><span lang="en">Add Photo</span><span lang="gu">ફોટો ઉમેરો</span></span></div>
-        <h3><span lang="en">Silver Pooja Thali Set</span><span lang="gu">ચાંદીની પૂજા થાળી સેટ</span></h3>
-        <div class="cat"><span lang="en">Silver &middot; Articles</span><span lang="gu">ચાંદી &middot; વસ્તુઓ</span></div>
-        <div class="price"><span lang="en">Enquire for price</span><span lang="gu">ભાવ માટે પૂછો</span></div>
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="5" y="5" width="14" height="14" rx="1.5"/></svg><span class="ph-label"><span lang="en" class="t-en">Add Photo</span><span lang="gu" class="t-gu">ફોટો ઉમેરો</span></span></div>
+        <h3><span lang="en" class="t-en">Silver Pooja Thali Set</span><span lang="gu" class="t-gu">ચાંદીની પૂજા થાળી સેટ</span></h3>
+        <div class="cat"><span lang="en" class="t-en">Silver &middot; Articles</span><span lang="gu" class="t-gu">ચાંદી &middot; વસ્તુઓ</span></div>
+        <div class="price"><span lang="en" class="t-en">Enquire for price</span><span lang="gu" class="t-gu">ભાવ માટે પૂછો</span></div>
       </div>
 
       <div class="product-card show" data-cat="diamond">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12,3 20,9 12,21 4,9"/></svg><span class="ph-label"><span lang="en">Add Photo</span><span lang="gu">ફોટો ઉમેરો</span></span></div>
-        <h3><span lang="en">Diamond Solitaire Ring</span><span lang="gu">હીરાની સોલિટેર વીંટી</span></h3>
-        <div class="cat"><span lang="en">Diamond &middot; Certified</span><span lang="gu">હીરા &middot; પ્રમાણિત</span></div>
-        <div class="price"><span lang="en">Enquire for price</span><span lang="gu">ભાવ માટે પૂછો</span></div>
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12,3 20,9 12,21 4,9"/></svg><span class="ph-label"><span lang="en" class="t-en">Add Photo</span><span lang="gu" class="t-gu">ફોટો ઉમેરો</span></span></div>
+        <h3><span lang="en" class="t-en">Diamond Solitaire Ring</span><span lang="gu" class="t-gu">હીરાની સોલિટેર વીંટી</span></h3>
+        <div class="cat"><span lang="en" class="t-en">Diamond &middot; Certified</span><span lang="gu" class="t-gu">હીરા &middot; પ્રમાણિત</span></div>
+        <div class="price"><span lang="en" class="t-en">Enquire for price</span><span lang="gu" class="t-gu">ભાવ માટે પૂછો</span></div>
       </div>
 
       <div class="product-card show" data-cat="diamond">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12,3 20,9 12,21 4,9"/></svg><span class="ph-label"><span lang="en">Add Photo</span><span lang="gu">ફોટો ઉમેરો</span></span></div>
-        <h3><span lang="en">Diamond Drop Earrings</span><span lang="gu">હીરાના ડ્રોપ ઇયરિંગ્સ</span></h3>
-        <div class="cat"><span lang="en">Diamond &middot; Certified</span><span lang="gu">હીરા &middot; પ્રમાણિત</span></div>
-        <div class="price"><span lang="en">Enquire for price</span><span lang="gu">ભાવ માટે પૂછો</span></div>
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12,3 20,9 12,21 4,9"/></svg><span class="ph-label"><span lang="en" class="t-en">Add Photo</span><span lang="gu" class="t-gu">ફોટો ઉમેરો</span></span></div>
+        <h3><span lang="en" class="t-en">Diamond Drop Earrings</span><span lang="gu" class="t-gu">હીરાના ડ્રોપ ઇયરિંગ્સ</span></h3>
+        <div class="cat"><span lang="en" class="t-en">Diamond &middot; Certified</span><span lang="gu" class="t-gu">હીરા &middot; પ્રમાણિત</span></div>
+        <div class="price"><span lang="en" class="t-en">Enquire for price</span><span lang="gu" class="t-gu">ભાવ માટે પૂછો</span></div>
       </div>
 
       <div class="product-card show" data-cat="bridal">
-        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 4C6 4 4 12 12 19C20 12 18 4 12 4Z"/></svg><span class="ph-label"><span lang="en">Add Photo</span><span lang="gu">ફોટો ઉમેરો</span></span></div>
-        <h3><span lang="en">Bridal Set — Temple Style</span><span lang="gu">દુલ્હન સેટ — ટેમ્પલ સ્ટાઇલ</span></h3>
-        <div class="cat"><span lang="en">Bridal &middot; Made To Order</span><span lang="gu">દુલ્હન &middot; ઓર્ડર મુજબ</span></div>
-        <div class="price"><span lang="en">Enquire for price</span><span lang="gu">ભાવ માટે પૂછો</span></div>
+        <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 4C6 4 4 12 12 19C20 12 18 4 12 4Z"/></svg><span class="ph-label"><span lang="en" class="t-en">Add Photo</span><span lang="gu" class="t-gu">ફોટો ઉમેરો</span></span></div>
+        <h3><span lang="en" class="t-en">Bridal Set — Temple Style</span><span lang="gu" class="t-gu">દુલ્હન સેટ — ટેમ્પલ સ્ટાઇલ</span></h3>
+        <div class="cat"><span lang="en" class="t-en">Bridal &middot; Made To Order</span><span lang="gu" class="t-gu">દુલ્હન &middot; ઓર્ડર મુજબ</span></div>
+        <div class="price"><span lang="en" class="t-en">Enquire for price</span><span lang="gu" class="t-gu">ભાવ માટે પૂછો</span></div>
       </div>
 
     </div>
@@ -507,8 +507,8 @@
 
 <section>
   <div class="section-head">
-    <div class="eyebrow"><span lang="en">Follow Along</span><span lang="gu">અમને અનુસરો</span></div>
-    <h2 class="section-head-title"><span lang="en">From The Showroom</span><span lang="gu">શોરૂમમાંથી</span></h2>
+    <div class="eyebrow"><span lang="en" class="t-en">Follow Along</span><span lang="gu" class="t-gu">અમને અનુસરો</span></div>
+    <h2 class="section-head-title"><span lang="en" class="t-en">From The Showroom</span><span lang="gu" class="t-gu">શોરૂમમાંથી</span></h2>
   </div>
   <div class="wrap">
     <div class="gallery-grid">
@@ -524,19 +524,19 @@
 
 <section id="about">
   <div class="section-head">
-    <div class="eyebrow"><span lang="en">Since Generations</span><span lang="gu">પેઢીઓથી</span></div>
-    <h2 class="section-head-title"><span lang="en">Our Story</span><span lang="gu">અમારી વાર્તા</span></h2>
+    <div class="eyebrow"><span lang="en" class="t-en">Since Generations</span><span lang="gu" class="t-gu">પેઢીઓથી</span></div>
+    <h2 class="section-head-title"><span lang="en" class="t-en">Our Story</span><span lang="gu" class="t-gu">અમારી વાર્તા</span></h2>
   </div>
   <div class="wrap">
     <div class="about-body">
-      <p lang="en">OM Jewellery has been a trusted name for those who value honest craftsmanship and lasting quality. Every piece is made with care, using certified materials and traditional techniques passed down through skilled hands — designed to be worn today and cherished for years to come.</p>
-      <p lang="gu">ઓમ જ્વેલરી પ્રામાણિક કારીગરી અને ટકાઉ ગુણવત્તાને મહત્વ આપનારાઓ માટે વિશ્વસનીય નામ છે. દરેક ઘરેણું કાળજીપૂર્વક, પ્રમાણિત સામગ્રી અને પરંપરાગત કારીગરીથી બનાવવામાં આવે છે — જે આજે પહેરવા અને વર્ષો સુધી સાચવવા માટે ડિઝાઇન કરવામાં આવ્યું છે.</p>
+      <p lang="en" class="t-en">Om Jewellers has been a trusted name for those who value honest craftsmanship and lasting quality. Every piece is made with care, using certified materials and traditional techniques passed down through skilled hands — designed to be worn today and cherished for years to come.</p>
+      <p lang="gu" class="t-gu">ૐ જવેલર્સ પ્રામાણિક કારીગરી અને ટકાઉ ગુણવત્તાને મહત્વ આપનારાઓ માટે વિશ્વસનીય નામ છે. દરેક ઘરેણું કાળજીપૂર્વક, પ્રમાણિત સામગ્રી અને પરંપરાગત કારીગરીથી બનાવવામાં આવે છે — જે આજે પહેરવા અને વર્ષો સુધી સાચવવા માટે ડિઝાઇન કરવામાં આવ્યું છે.</p>
     </div>
 
     <div class="story-gallery">
-      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12,3 20,9 12,21 4,9"/></svg><span class="ph-label"><span lang="en">Storefront / Workshop Photo</span><span lang="gu">દુકાન / વર્કશોપ ફોટો</span></span></div>
-      <div class="ph"><span class="ph-label"><span lang="en">Craft Photo</span><span lang="gu">કારીગરી ફોટો</span></span></div>
-      <div class="ph"><span class="ph-label"><span lang="en">Craft Photo</span><span lang="gu">કારીગરી ફોટો</span></span></div>
+      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12,3 20,9 12,21 4,9"/></svg><span class="ph-label"><span lang="en" class="t-en">Storefront / Workshop Photo</span><span lang="gu" class="t-gu">દુકાન / વર્કશોપ ફોટો</span></span></div>
+      <div class="ph"><span class="ph-label"><span lang="en" class="t-en">Craft Photo</span><span lang="gu" class="t-gu">કારીગરી ફોટો</span></span></div>
+      <div class="ph"><span class="ph-label"><span lang="en" class="t-en">Craft Photo</span><span lang="gu" class="t-gu">કારીગરી ફોટો</span></span></div>
     </div>
   </div>
 </section>
@@ -544,74 +544,74 @@
 <div class="values-row">
   <div class="value-item">
     <svg viewBox="0 0 24 24" fill="none" stroke="#D9D9DE" stroke-width="1"><path d="M12 2l2.4 5 5.6.5-4.2 3.8 1.3 5.5L12 14.7 6.9 16.8l1.3-5.5L4 7.5l5.6-.5z"/></svg>
-    <h3><span lang="en">Certified Purity</span><span lang="gu">પ્રમાણિત શુદ્ધતા</span></h3>
-    <p><span lang="en">Every gold piece is BIS hallmarked; every diamond comes with certification.</span><span lang="gu">દરેક ગોલ્ડ ટુકડો BIS હોલમાર્કવાળો છે; દરેક હીરા સાથે પ્રમાણપત્ર મળે છે.</span></p>
+    <h3><span lang="en" class="t-en">Certified Purity</span><span lang="gu" class="t-gu">પ્રમાણિત શુદ્ધતા</span></h3>
+    <p><span lang="en" class="t-en">Every gold piece is BIS hallmarked; every diamond comes with certification.</span><span lang="gu" class="t-gu">દરેક ગોલ્ડ ટુકડો BIS હોલમાર્કવાળો છે; દરેક હીરા સાથે પ્રમાણપત્ર મળે છે.</span></p>
   </div>
   <div class="value-item">
     <svg viewBox="0 0 24 24" fill="none" stroke="#D9D9DE" stroke-width="1"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
-    <h3><span lang="en">Made For You</span><span lang="gu">તમારા માટે બનાવેલ</span></h3>
-    <p><span lang="en">Custom designs built around your occasion, budget, and taste.</span><span lang="gu">તમારા પ્રસંગ, બજેટ અને પસંદ મુજબ કસ્ટમ ડિઝાઇન.</span></p>
+    <h3><span lang="en" class="t-en">Made For You</span><span lang="gu" class="t-gu">તમારા માટે બનાવેલ</span></h3>
+    <p><span lang="en" class="t-en">Custom designs built around your occasion, budget, and taste.</span><span lang="gu" class="t-gu">તમારા પ્રસંગ, બજેટ અને પસંદ મુજબ કસ્ટમ ડિઝાઇન.</span></p>
   </div>
   <div class="value-item">
     <svg viewBox="0 0 24 24" fill="none" stroke="#D9D9DE" stroke-width="1"><path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6z"/></svg>
-    <h3><span lang="en">A Name You Trust</span><span lang="gu">વિશ્વાસપાત્ર નામ</span></h3>
-    <p><span lang="en">Honest pricing and straightforward advice, every single visit.</span><span lang="gu">દરેક મુલાકાત વખતે પ્રામાણિક ભાવ અને સ્પષ્ટ સલાહ.</span></p>
+    <h3><span lang="en" class="t-en">A Name You Trust</span><span lang="gu" class="t-gu">વિશ્વાસપાત્ર નામ</span></h3>
+    <p><span lang="en" class="t-en">Honest pricing and straightforward advice, every single visit.</span><span lang="gu" class="t-gu">દરેક મુલાકાત વખતે પ્રામાણિક ભાવ અને સ્પષ્ટ સલાહ.</span></p>
   </div>
 </div>
 
 <section id="contact">
   <div class="section-head">
-    <div class="eyebrow"><span lang="en">We'd Love To See You</span><span lang="gu">તમને મળીને આનંદ થશે</span></div>
-    <h2 class="section-head-title"><span lang="en">Visit Us</span><span lang="gu">અમારો સંપર્ક</span></h2>
+    <div class="eyebrow"><span lang="en" class="t-en">We'd Love To See You</span><span lang="gu" class="t-gu">તમને મળીને આનંદ થશે</span></div>
+    <h2 class="section-head-title"><span lang="en" class="t-en">Visit Us</span><span lang="gu" class="t-gu">અમારો સંપર્ક</span></h2>
   </div>
   <div class="wrap">
     <div class="contact-layout">
       <div class="contact-box">
         <div class="contact-row">
-          <div class="contact-label"><span lang="en">Address</span><span lang="gu">સરનામું</span></div>
-          <div class="contact-value placeholder-text">[ Add shop address here ]</div>
+          <div class="contact-label"><span lang="en" class="t-en">Address</span><span lang="gu" class="t-gu">સરનામું</span></div>
+          <div class="contact-value">18/Tower-C, G.F. Aura Heights-2,<br>Sagun Party Plot ni Same,<br>Bill Road, Atladara, Vadodara.</div>
         </div>
         <div class="contact-row">
-          <div class="contact-label"><span lang="en">Phone</span><span lang="gu">ફોન</span></div>
-          <div class="contact-value placeholder-text">[ Add phone number here ]</div>
+          <div class="contact-label"><span lang="en" class="t-en">Phone</span><span lang="gu" class="t-gu">ફોન</span></div>
+          <div class="contact-value">+91 99246 98517</div>
         </div>
         <div class="contact-row">
-          <div class="contact-label"><span lang="en">Store Hours</span><span lang="gu">દુકાનનો સમય</span></div>
+          <div class="contact-label"><span lang="en" class="t-en">Store Hours</span><span lang="gu" class="t-gu">દુકાનનો સમય</span></div>
           <div class="contact-value placeholder-text">[ Add store hours here ]</div>
         </div>
         <div class="contact-buttons">
-          <a href="tel:+91XXXXXXXXXX"><span lang="en">Call Now</span><span lang="gu">હમણાં કૉલ કરો</span></a>
-          <a href="https://wa.me/91XXXXXXXXXX" target="_blank"><span lang="en">WhatsApp</span><span lang="gu">વોટ્સએપ</span></a>
+          <a href="tel:+919924698517"><span lang="en" class="t-en">Call Now</span><span lang="gu" class="t-gu">હમણાં કૉલ કરો</span></a>
+          <a href="https://wa.me/919924698517" target="_blank"><span lang="en" class="t-en">WhatsApp</span><span lang="gu" class="t-gu">વોટ્સએપ</span></a>
         </div>
       </div>
-      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="10" r="3"/><path d="M12 21s7-6.5 7-11a7 7 0 10-14 0c0 4.5 7 11 7 11z"/></svg><span class="ph-label"><span lang="en">Map / Storefront Photo</span><span lang="gu">નકશો / દુકાનનો ફોટો</span></span></div>
+      <div class="ph"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="10" r="3"/><path d="M12 21s7-6.5 7-11a7 7 0 10-14 0c0 4.5 7 11 7 11z"/></svg><span class="ph-label"><span lang="en" class="t-en">Map / Storefront Photo</span><span lang="gu" class="t-gu">નકશો / દુકાનનો ફોટો</span></span></div>
     </div>
   </div>
 </section>
 
 <footer>
-  <span class="brand-text"><span lang="en">OM JEWELLERY</span><span lang="gu">ઓમ જ્વેલરી</span></span>
+  <span class="brand-text"><span lang="en" class="t-en">OM JEWELLERS</span><span lang="gu" class="t-gu">ૐ જવેલર્સ</span></span>
   <nav>
-    <a href="#home">Home</a><a href="#collections">Collections</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <a href="#home"><span lang="en" class="t-en">Home</span><span lang="gu" class="t-gu">હોમ</span></a><a href="#collections"><span lang="en" class="t-en">Collections</span><span lang="gu" class="t-gu">કલેક્શન</span></a><a href="#about"><span lang="en" class="t-en">About</span><span lang="gu" class="t-gu">અમારા વિશે</span></a><a href="#contact"><span lang="en" class="t-en">Contact</span><span lang="gu" class="t-gu">સંપર્ક</span></a>
   </nav>
-  <div class="fine">&copy; 2026 <span lang="en">OM Jewellery. All rights reserved.</span><span lang="gu">ઓમ જ્વેલરી. તમામ હક્કો સુરક્ષિત.</span></div>
+  <div class="fine">&copy; 2026 <span lang="en" class="t-en">Om Jewellers. All rights reserved.</span><span lang="gu" class="t-gu">ૐ જવેલર્સ. તમામ હક્કો સુરક્ષિત.</span></div>
 </footer>
 
 <!-- Sticky bottom action bar — mobile only -->
 <div class="action-bar">
-  <a href="tel:+91XXXXXXXXXX">
+  <a href="tel:+919924698517">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2C9.5 21 3 14.5 3 6a2 2 0 012-2z"/></svg>
-    <span lang="en">Call</span><span lang="gu">કૉલ</span>
+    <span lang="en" class="t-en">Call</span><span lang="gu" class="t-gu">કૉલ</span>
   </a>
   <div class="divider"></div>
-  <a href="https://wa.me/91XXXXXXXXXX" target="_blank">
+  <a href="https://wa.me/919924698517" target="_blank">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 01-12.4 7.5L3 20l1.1-5.4A8.5 8.5 0 1121 11.5z"/></svg>
-    <span lang="en">WhatsApp</span><span lang="gu">વોટ્સએપ</span>
+    <span lang="en" class="t-en">WhatsApp</span><span lang="gu" class="t-gu">વોટ્સએપ</span>
   </a>
   <div class="divider"></div>
   <a href="#collections">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><polygon points="12,3 20,9 12,21 4,9"/></svg>
-    <span lang="en">Shop</span><span lang="gu">ખરીદો</span>
+    <span lang="en" class="t-en">Shop</span><span lang="gu" class="t-gu">ખરીદો</span>
   </a>
 </div>
 
